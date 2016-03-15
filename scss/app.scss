@@ -59,9 +59,12 @@ $title2Color:  #999999;
 //padding
 
 $generalPadding: 7% 0 7% 0;
-
 p {
 	margin: 0;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 .container {
@@ -71,7 +74,7 @@ p {
 }
 
 #head {
-	   background: url("face.jpg") no-repeat fixed; 
+	   background: url("img/face.jpg") no-repeat fixed; 
 	  -webkit-background-size: cover; 
 	  background-size: 100%;
 	  top: 0;  
@@ -90,7 +93,9 @@ p {
 	@include flex-grid-column(12);
 	margin: $generalPadding;
 	padding: $generalPadding;
-	background-color: $mediumContainer;
+	background: url("img/programming.jpg")  no-repeat fixed;
+	-webkit-background-size: cover;
+	  top: 0; 
 }
 
 .skillTitle, .projectTitle {

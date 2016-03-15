@@ -2648,13 +2648,16 @@ kbd {
 p {
   margin: 0; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 .container {
   border-width: 120px;
   border-color: #DA3116;
   background-color: #e6e6e6; }
 
 #head {
-  background: url("face.jpg") no-repeat fixed;
+  background: url("img/face.jpg") no-repeat fixed;
   background-size: 100%;
   top: 0;
   max-width: 75rem;
@@ -2693,7 +2696,9 @@ p {
   max-width: 100%;
   margin: 7% 0 7% 0;
   padding: 7% 0 7% 0;
-  background-color: #f2f2f2; }
+  background: url("img/programming.jpg") no-repeat fixed;
+  -webkit-background-size: cover;
+  top: 0; }
   @media screen and (min-width: 40em) {
     .skills {
       padding-left: 0.9375rem;
