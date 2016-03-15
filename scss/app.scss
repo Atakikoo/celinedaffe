@@ -79,11 +79,9 @@ p {
 	  background-size: 100%;
 	  top: 0;  
 	  @include flex-grid-row();
-	  @include flex-align($x: center, $y: middle);
-
+	  @include flex-align($x: center, $y: middle); 
+	  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
-
 		
 .mainContent {
 	 @include flex-grid-row();
@@ -103,6 +101,7 @@ p {
 	background-color: $whiteColor;
 	text-align: center;
 	padding: 0 !important;
+	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 
@@ -124,8 +123,8 @@ p {
 	border-radius: 20px;
 }
 
-div img {
+.round {
     border-radius: 200px;
+    @include mui-animation(hinge, fade, spin(120deg));
+    box-shadow:  0 27px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22);
 }
-
-// #e6e4e2
