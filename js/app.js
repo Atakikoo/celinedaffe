@@ -47,8 +47,8 @@ $(function() {
 
 
 // add class on hover
-
+var projectEffect = 'pulse';
 $('.project').hover(
-       function(){ $(this).addClass('pulse') },
-       function(){ $(this).removeClass('pulse') }
+       function(){ $(this).addClass(projectEffect) },
+       function(){ $(this).removeClass(projectEffect) }
 )
