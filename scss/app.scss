@@ -2,13 +2,15 @@
 
 @import 'settings';
 @import 'foundation';
-@import 'motion-ui';
 
 @include foundation-global-styles;
-// @include foundation-grid;
 @include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-flex-classes;
+// @include foundation-grid;
 // @include foundation-forms;
 // @include foundation-range-input;
 // @include foundation-accordion;
@@ -42,12 +44,8 @@
 // @include foundation-title-bar;
 // @include foundation-tooltip;
 // @include foundation-top-bar;
-@include foundation-visibility-classes;
-@include foundation-float-classes;
-@include foundation-flex-classes;
 
-@include motion-ui-transitions;
-@include motion-ui-animations;
+
 
 // my colors
 $container: #e6e6e6; //grey force 2
@@ -56,6 +54,8 @@ $smallContainer: white;
 $whiteColor: white;
 $title2Color:  #999999;
 
+
+
 //padding
 
 $generalPadding: 7% 0 7% 0;
@@ -63,9 +63,19 @@ p {
 	margin: 0;
 }
 
+//effects
+
+.round {
+    border-radius: 200px;
+    
+    box-shadow:  0 27px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22);
+}
+
 ::-webkit-scrollbar { 
     display: none; 
 }
+
+// different styles of elements
 
 .container {
 	border-width: 120px;
@@ -123,8 +133,12 @@ p {
 	border-radius: 20px;
 }
 
-.round {
-    border-radius: 200px;
-    @include mui-animation(hinge, fade, spin(120deg));
-    box-shadow:  0 27px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22);
+
+// animations
+
+.project:hover {
+  -webkit-animation-duration: 1.5s;
+  // -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+
 }

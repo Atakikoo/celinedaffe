@@ -3,7 +3,7 @@ var $    = require('gulp-load-plugins')();
 
 var sassPaths = [
   'bower_components/foundation-sites/scss',
-  'bower_components/motion-ui/src','node_modules/motion-ui/src'
+  'bower_components/motion-ui/src'
 ];
 
 gulp.task('sass', function() {
