@@ -5,12 +5,13 @@ npm-debug.log
 scss
 stylesheets
 
-foundation-flex.css.map
-foundation-flex.css
-foundation-rtl.css.map
-foundation-rtl.css
-foundation.css.map
+css/foundation-flex.css.map
+css/foundation-flex.css
+css/foundation-rtl.css.map
+css/foundation-rtl.css
+css/foundation.css.map
 
+CHANGELOG.md
 foundationREADME.md
 params.json
 template.html
