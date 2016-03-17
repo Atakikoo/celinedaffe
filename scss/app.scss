@@ -65,15 +65,18 @@ p {
 
 //effects
 
+//skill project 
 .round {
     border-radius: 200px;
     
-    box-shadow:  0 27px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22);
 }
 
 ::-webkit-scrollbar { 
     display: none; 
 }
+
+// Reveal on scroll
+.revealOnScrollHide { opacity: 0; }
 
 // different styles of elements
 
@@ -89,7 +92,7 @@ p {
 	  background-size: 100%;
 	  top: 0;  
 	  @include flex-grid-row();
-	  @include flex-align($x: center, $y: middle); 
+	  @include flex-align($x: center, $y: middle);
 	  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 		
@@ -136,9 +139,9 @@ p {
 
 // animations
 
-.project:hover {
+.projectImg:hover {
   -webkit-animation-duration: 1.5s;
   // -webkit-animation-delay: 2s;
   -webkit-animation-iteration-count: 1;
-
+  box-shadow:  0 27px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22);
 }
