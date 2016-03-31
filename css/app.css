@@ -1966,8 +1966,15 @@ kbd {
         -ms-flex-order: 6;
             order: 6; } }
 
+.schoolFont p {
+  color: grey;
+  text-align: center; }
+
 p {
   margin: 0; }
+
+.school {
+  padding-bottom: 3%; }
 
 .round {
   border-radius: 200px; }
@@ -2061,6 +2068,9 @@ p {
   text-align: center;
   padding: 3% 3% 3% 3%;
   border-radius: 20px; }
+
+.schools {
+  padding-bottom: 5%; }
 
 .projectImg:hover {
   -webkit-animation-duration: 1.5s;
