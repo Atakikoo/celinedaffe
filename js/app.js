@@ -1,4 +1,3 @@
-
 $(document).foundation();
 
 
@@ -54,6 +53,12 @@ $(function() {
 // add class on hover
 var projectEffect = 'animated pulse';
 $('.projectImg').hover(
+       function(){ $(this).addClass(projectEffect) },
+       function(){ $(this).removeClass(projectEffect) }
+)
+
+var schoolShadow = 'animated pulse';
+$('.schoolShadow').hover(
        function(){ $(this).addClass(projectEffect) },
        function(){ $(this).removeClass(projectEffect) }
 )
