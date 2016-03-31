@@ -41,7 +41,7 @@ $(function() {
       var $this     = $(this),
           offsetTop = $this.offset().top;
       if (scrolled + win_height_padded < offsetTop) {
-        $(this).removeClass('animated bounceInUp flipInX lightSpeedIn')
+        $(this).removeClass('animated bounceInUp flipInX bounceInLeft bounceInRight')
      $this.addClass('revealOnScrollHide');
       }
     });
@@ -57,3 +57,4 @@ $('.projectImg').hover(
        function(){ $(this).addClass(projectEffect) },
        function(){ $(this).removeClass(projectEffect) }
 )
+
