@@ -1980,7 +1980,7 @@ kbd {
   font-weight: normal;
   font-style: normal; }
 
-h1, h2, h6 {
+h1, h2, h5, h6 {
   font-family: asimov;
   font-weight: bold;
   color: grey; }
@@ -1992,10 +1992,8 @@ p {
 
 .schoolFont p {
   text-align: center;
-  font-size: 0.9rem; }
-
-p {
-  margin: 0; }
+  font-size: 0.9rem;
+  color: white; }
 
 .school {
   padding-bottom: 3%;
@@ -2038,16 +2036,24 @@ p {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 2; }
 
-.git {
+.links {
   position: absolute;
   float: left;
-  top: 0px;
-  left: 0px;
+  top: 1%;
+  left: 2%;
   width: 6%;
-  z-index: 100;
+  z-index: 100; }
+
+.git {
   margin: 2% 2% 2% 2%;
   padding: 0.5% 0.5% 0.5% 0.5%;
-  background-color: #675654;
+  background-color: #7C766C;
+  border-radius: 200px; }
+
+.in {
+  margin: 2% 2% 2% 2%;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  background-color: #7C766C;
   border-radius: 200px; }
 
 .mainContent {
@@ -2059,7 +2065,8 @@ p {
   display: flex;
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
-          flex-flow: row wrap; }
+          flex-flow: row wrap;
+  margin-bottom: 4%; }
 
 .skills {
   -webkit-flex: 0 0 100%;
@@ -2068,23 +2075,24 @@ p {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
   max-width: 100%;
-  margin: 7% 0 7% 0;
-  padding: 7% 0 7% 0;
+  margin: 3.5% 0 0 0;
+  padding: 5% 0 5% 0;
   background: url("img/programming.png") no-repeat fixed;
   -webkit-background-size: cover;
-  top: 0; }
+  top: 0;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   @media screen and (min-width: 40em) {
     .skills {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
 
-.skillTitle, .projectTitle {
-  color: #999999;
+.skillTitle, .projectTitle, .schoolTitle {
+  color: #7C766C;
   background-color: white;
   text-align: center;
   padding: 0 !important;
   font-size: 3rem;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  opacity: 0.7; }
 
 .skill {
   margin: 3% 3% 3% 3%;
@@ -2097,8 +2105,10 @@ p {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
   max-width: 100%;
-  margin: 7% 0 7% 0;
-  background-color: #f2f2f2; }
+  margin: 3.5% 0 0 0;
+  padding: 5% 0 5% 0;
+  background-color: #f2f2f2;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   @media screen and (min-width: 40em) {
     .projects {
       padding-left: 0.9375rem;
@@ -2113,7 +2123,76 @@ p {
   margin-bottom: 4%; }
 
 .schools {
-  padding-bottom: 5%; }
+  margin: 3.5% 0 0 0;
+  padding: 5% 0 5% 0;
+  background-color: #C0B8A1;
+  opacity: 0.8;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.school {
+  margin-top: 4%; }
+
+.hobbies {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 3.5% 0 0 0;
+  padding: 5% 0 5% 0;
+  background-color: #f2f2f2;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .hobbies::before, .hobbies::after {
+    content: ' ';
+    display: table;
+    -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  .hobbies::after {
+    clear: both; }
+
+.hobby {
+  width: 100%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  text-align: center;
+  padding: 2% 0 2% 0; }
+  @media screen and (min-width: 40em) {
+    .hobby {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  .hobby:last-child:not(:first-child) {
+    float: right; }
+
+.blue {
+  color: #316AA8;
+  font-size: 1.2rem; }
+
+.pink {
+  color: pink;
+  font-size: 2rem; }
+
+.yellow {
+  color: #FF6600;
+  font-size: 1.5rem; }
+
+.greenBlue {
+  color: #3B5860;
+  font-size: 1.1rem; }
+
+.green {
+  color: #60BB39;
+  font-size: 1.7rem; }
+
+.red {
+  color: #990000;
+  font-size: 1.2rem; }
+
+.purple {
+  color: #330033;
+  font-size: 13rem; }
 
 .skillShadow {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
