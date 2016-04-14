@@ -15,9 +15,14 @@
       
       
      <header id="head">
-       <a href="https://github.com/Atakikoo">
+       <div class="links">
+         <a href="https://github.com/Atakikoo">
         <img class="git" src="css/img/github.png" alt="lien vers mon compte github">
       </a>
+      <a href="https://fr.linkedin.com/in/c%C3%A9line-daffe-993583b1">
+        <img class="in" src="css/img/in.png" alt="lien vers mon compte linkedin">
+      </a>
+       </div>
          <img src="./css/img/faceTitle3.png" alt="">
 
      </header>
@@ -72,21 +77,21 @@
             <a href="https://github.com/Atakikoo/projet-Le_chemin_electricite">
               <img class="round projectImg" src="./css/img/projets/erdf.png"  alt="Le chemin de l’électricité">
             </a>
-            <h6>Le chemin de l’électricité </h6><p> ERDF Eure-et-Loire <br> Animation CSS et JS</p>
+            <h6 class="fontBold">Le chemin de l’électricité </h6><p> ERDF Eure-et-Loire <br> Animation CSS et JS</p>
           </div>
 
           <div class="column project">
             <a href="https://github.com/WildCodeSchool/projet-ptits-illumines">
               <img class="round projectImg " src="./css/img/projets/illuminé.png"  alt="Jeu d'introduction">
             </a>
-            <h6>Les petits illuminées </h6><p> Association - Prototypage d’une App <br> SnapSVG, Ionic, Cordova et NodeJS</p>
+            <h6  class="fontBold">Les petits illuminées </h6><p> Association - Prototypage d’une App <br> SnapSVG, Ionic, Cordova et NodeJS</p>
           </div>
 
           <div class="column project">
             <a href="https://github.com/Atakikoo/UberParty">
               <img class="round projectImg " src="./css/img/projets/uberParty.png"  alt="image de l'application UberParty">
             </a>
-            <h6>UberParty</h6>
+            <h6  class="fontBold">UberParty</h6>
             <p>Gestion de fêtes avec vos amis<br>Ionic et MongoDB</p>
           </div>
 
@@ -94,7 +99,7 @@
             <a href="https://github.com/Atakikoo/InstaGroot">
               <img class="round projectImg " src="./css/img/projets/InstaGroot.png"  alt="Page de login de l'application Instagroot">
             </a>
-            <h6>Instagroot</h6>
+            <h6  class="fontBold">Instagroot</h6>
             <p>Un clone d’instagram<br>MEAN Stack, Ionic et MongoDB</p>
            </div>
 
@@ -102,7 +107,7 @@
             <a href="https://github.com/Atakikoo/Marinette-a-l-plage">
               <img class="round projectImg " src="./css/img/projets/marinette.png"  alt="Marinette al' plage">
             </a>
-            <h6>Marinette a’l plage</h6>
+            <h6  class="fontBold">Marinette a’l plage</h6>
             <p>AngularJS et API Openweathermapg et GoogleMaps</p>
           </div>
 
@@ -110,20 +115,21 @@
             <a href="http://atakikoo.github.io/anne-rudolph.github.io/">
               <img class="round projectImg " src="./css/img/projets/rudolph.png"  alt="Image de présentation du portfolio de Anne Rudolph">
             </a>
-            <h6>Anne Rudoph's Portfolio</h6>
+            <h6  class="fontBold">Anne Rudoph's Portfolio</h6>
             <p>Single page responsive avec Foundation</p>
           </div>
         </div> <!-- projects end -->
 
 
-        <div class="row schools">
+        <div class="schools row">
+           <h2 class="schoolTitle small-12 medium-12 large-12 columns">- - Schools - -</h2>
           <div class="school small-6 medium-expand large-expand columns revealOnScroll revealOnScrollHide"  data-animation="bounceInLeft" data-timeout="800">
             <a href="http://wildcodeschool.fr/">
               <img class="round schoolShadow"  src="./css/img/logo/wcs.png" alt="Logo WildCodeSchool">
             </a>
             <div class="schoolFont">
-              <p>Préparation au titre de développeur logiciel</p>
-              <p>septembre 2015 à janvier 2016</p>
+              <p class="fontBold">Préparation au titre de développeur logiciel</p>
+              <p>Septembre 2015 à janvier 2016</p>
             </div>
           </div>
           <div class="school small-6 medium-expand large-expand columns revealOnScroll revealOnScrollHide"  data-animation="bounceInLeft" data-timeout="600">
@@ -131,7 +137,7 @@
               <img class="round schoolShadow"  src="./css/img/logo/paris3.png" alt="Logo Université Paris 3">
             </a>
             <div class="schoolFont">
-              <p>Master 1 Conception et Direction de Projets Culturels</p>
+              <p class="fontBold">Master 1 Conception et Direction de Projets Culturels</p>
               <p>Paris - 2011</p>
             </div>
           </div>
@@ -140,7 +146,7 @@
               <img class="round schoolShadow"  src="./css/img/logo/paris3.png" alt="Logo Université Paris 3">
             </a>
             <div class="schoolFont">
-              <p>Licence de Conception et Mise en Oeuvre de Projets Culturels</p>
+              <p class="fontBold">Licence de Conception et Mise en Oeuvre de Projets Culturels</p>
               <p>Paris - 2009</p>
             </div>
           </div>
@@ -149,16 +155,47 @@
               <img class="round schoolShadow"  src="./css/img/logo/esaat.png" alt="Logo ESAAT">
             </a>
             <div class="schoolFont">
-              <p>Bac STI Arts Appliqués</p>
+              <p class="fontBold">Bac STI Arts Appliqués</p>
               <p>Roubaix (59) -2005</p>
             </div>
           </div>
         </div> <!-- end schools -->
+
+        <div class="hobbies">
+          <h2 class="skillTitle">- - Leisures - -</h2>
+          <h5 class="hobby fontBold blue revealOnScroll revealOnScrollHide" data-animation="bounceInRight" data-timeout="1000">
+            Assossiation Art Levant (Bénévolat)
+          </h5>
+          <h5 class="hobby green revealOnScroll revealOnScrollHide" data-animation="bounceInRight" data-timeout="600">
+              Les arts plastiques (photographie, modelage, aquarelle)
+          </h5>
+          <h5 class="hobby yellow revealOnScroll revealOnScrollHide" data-animation="bounceInLeft" data-timeout="900">
+            L’art contemporain
+          </h5>
+          <h5 class="hobby fontBold greenBlue revealOnScroll revealOnScrollHide" data-animation="bounceInRight" data-timeout="300">
+            La culture japonaise (cuisine, histoire, kimono)
+          </h5>
+          <h5 class="hobby pink revealOnScroll revealOnScrollHide" data-animation="bounceInRight" data-timeout="800">
+            Développement web
+          </h5>
+          <h5 class="hobby fontBold red revealOnScroll revealOnScrollHide" data-animation="bounceInLeft" data-timeout="1400">
+            Couchsurfing
+          </h5>
+          <h5 class="hobby purple revealOnScroll revealOnScrollHide" data-animation="bounceInLeft" data-timeout="1100">
+            Voyage en Australie et au Japon, 2013-2014
+          </h5>
+        </div>
      </div> <!-- main content -->
     </div> <!-- container -->
 
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/vendor/foundation.core.js"></script>
+    <script src="js/vendor/foundation.util.keyboard.js"></script>
+    <script src="js/vendor/foundation.util.motion.js"></script>
+    <script src="js/vendor/foundation.util.timerAndImageLoader.js"></script>
+    <script src="js/vendor/foundation.util.touch.js"></script>
+    <script src="js/vendor/foundation.orbit.js"></script>
     <script src="js/foundation.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
     <script src="js/app.js"></script>
